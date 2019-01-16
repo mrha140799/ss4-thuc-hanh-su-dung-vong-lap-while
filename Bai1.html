@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+</head>
+<body>
+<h id = "idShow"></h>
+<script>
+    var idShow = document.getElementById("idShow");
+    idShow.innerHTML = "Your number : " + "<br>";
+    var numInp = 0;
+    var sum = 0;
+    while (numInp != -1) {
+        numInp = parseInt(prompt("Enter a number ( Enter -1 to exit ) : "));
+        idShow.innerHTML +=  numInp+ " ; " + "\t";
+        sum += numInp;
+    }
+    idShow.innerHTML +=  "<br>"+"Tổng các số bạn vừa nhập là : " + sum;
+</script>
+</body>
+</html>
